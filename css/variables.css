@@ -1,0 +1,132 @@
+/**
+ * CSS Variables and Root Styles
+ * Centralized color palette and spacing system
+ */
+
+:root {
+  /* Colors */
+  --primary-dark: #000000d4;
+  --bg-light: #e6e6ea;
+  --bg-white: #ffffff;
+  --text-light: #ffffff;
+  --text-dark: #000000;
+  --text-gray: #808080;
+  --shadow-color: rgba(0, 0, 0, 0.9);
+
+  /* Option Colors */
+  --option-1-bg: #fe4a49;
+  --option-2-bg: #2ab7ca;
+  --option-3-bg: #910c65;
+  --option-4-bg: #06812b;
+
+  /* Accent Colors */
+  --color-correct: #06812b;
+  --color-incorrect: #fe4a49;
+  --color-accent: #2ab7ca;
+
+  /* Spacing */
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 15px;
+  --spacing-lg: 20px;
+  --spacing-xl: 30px;
+
+  /* Border Radius */
+  --border-radius: 3px;
+
+  /* Shadows */
+  --shadow-base: 2px 2px 6px 0px var(--shadow-color);
+  --shadow-hover: 0px 4px 12px 0px var(--shadow-color);
+
+  /* Transitions */
+  --transition-fast: 0.3s ease;
+  --transition-base: 0.6s ease;
+  --transition-slow: 1.5s ease;
+
+  /* Font Sizes */
+  --font-base: 1rem;
+  --font-lg: 1.3rem;
+  --font-xl: 2rem;
+  --font-2xl: 3.78vw;
+  --font-3xl: 5.2vw;
+
+  /* Z-index */
+  --z-header: 100;
+  --z-modal: 1000;
+  --z-tooltip: 1100;
+}
+
+/* Dark Mode Variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-light: #1a1a1e;
+    --bg-white: #2d2d31;
+    --text-light: #e6e6ea;
+    --text-dark: #f0f0f0;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Luckiest Guy', cursive;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.9;
+  min-height: 100vh;
+}
+
+/* Utility Classes */
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: var(--spacing-xs); }
+.mt-2 { margin-top: var(--spacing-sm); }
+.mt-3 { margin-top: var(--spacing-md); }
+.mt-4 { margin-top: var(--spacing-lg); }
+.mt-5 { margin-top: var(--spacing-xl); }
+
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: var(--spacing-xs); }
+.mb-2 { margin-bottom: var(--spacing-sm); }
+.mb-3 { margin-bottom: var(--spacing-md); }
+.mb-4 { margin-bottom: var(--spacing-lg); }
+.mb-5 { margin-bottom: var(--spacing-xl); }
+
+.p-1 { padding: var(--spacing-xs); }
+.p-2 { padding: var(--spacing-sm); }
+.p-3 { padding: var(--spacing-md); }
+.p-4 { padding: var(--spacing-lg); }
+.p-5 { padding: var(--spacing-xl); }

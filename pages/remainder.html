@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Remainder Game - Learn remainder/modulo operations">
+    <meta name="theme-color" content="#000000">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/2891/2891518.png" sizes="32x32" />
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <title>Junior Math - Remainder Game</title>
+</head>
+<body>
+    <audio id="correctSound" preload="auto">
+        <source src="../assets/Correct.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="wrongSound" preload="auto">
+        <source src="../assets/wrong.mp3" type="audio/mpeg">
+    </audio>
+
+    <header>
+        <div class="container">
+            <div class="nav">
+                <h2>
+                    <span><i class="fa fa-trophy" aria-hidden="true"></i></span>
+                    <a href="../index.html">JUNIOR MATH</a>
+                </h2>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Add</a></li>
+                        <li><a href="subtract.html">Subtract</a></li>
+                        <li><a href="multiply.html">Multiply</a></li>
+                        <li><a href="divide.html">Divide</a></li>
+                        <li class="current"><a href="remainder.html">Remainder</a></li>
+                        <li><a href="between.html">Between</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <img style="position: absolute; margin-left: 1%; margin-top: 1%;" 
+             src="https://www.iconpacks.net/icons/1/free-microphone-icon-342-thumb.png" 
+             height="32px" width="32px" alt="Microphone Icon">
+        
+        <div class="question">
+            <h1 id="num1" style="color:#fe4a49">1</h1>
+            <h1 style="color:#2ab7ca">%</h1>
+            <h1 id="num2" style="color:#990674">1</h1>
+            <h1 style="color:#b40303">=</h1>
+            <h1 style="color:gray">?</h1>
+        </div>
+
+        <div class="answer-options">
+            <h1 id="option1">1</h1>
+            <h1 id="option2">2</h1>
+            <h1 id="option3">3</h1>
+            <h1 id="option4">4</h1>
+        </div>
+    </div>
+
+    <script type="module" src="../js/modules/remainder.js"></script>
+</body>
+</html>

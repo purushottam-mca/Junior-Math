@@ -10,17 +10,17 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="https://image.flaticon.com/icons/png/512/2891/2891518.png" sizes="32x32" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     
-    <title>Junior Math - Home</title>
+    <title>Junior Math - Addition Game</title>
 </head>
 <body>
     <!-- Audio Elements -->
     <audio id="correctSound" preload="auto">
-        <source src="assets/Correct.mp3" type="audio/mpeg">
+        <source src="../assets/Correct.mp3" type="audio/mpeg">
     </audio>
     <audio id="wrongSound" preload="auto">
-        <source src="assets/wrong.mp3" type="audio/mpeg">
+        <source src="../assets/wrong.mp3" type="audio/mpeg">
     </audio>
 
     <!-- Header Navigation -->
@@ -33,7 +33,7 @@
                 </h2>
                 <nav>
                     <ul>
-                        <li><a href="pages/add.html">Add</a></li>
+                        <li class="current"><a href="index.html">Add</a></li>
                         <li><a href="pages/subtract.html">Subtract</a></li>
                         <li><a href="pages/multiply.html">Multiply</a></li>
                         <li><a href="pages/divide.html">Divide</a></li>
@@ -45,12 +45,29 @@
         </div>
     </header>
 
-    <!-- Main Content Area - Placeholder for future home page content -->
+    <!-- Main Game Area -->
     <div class="wrapper">
-        <div class="question" style="flex-direction: column;">
-            <h1 style="color:#fe4a49; font-size: 3rem;">Welcome to Junior Math!</h1>
-            <p style="color:#333; font-size: 1.2rem; margin-top: 20px;">Select an operation from the menu above to start learning</p>
+        <img style="position: absolute; margin-left: 1%; margin-top: 1%;" 
+             src="https://www.iconpacks.net/icons/1/free-microphone-icon-342-thumb.png" 
+             height="32px" width="32px" alt="Microphone Icon">
+        
+        <div class="question">
+            <h1 id="num1" style="color:#fe4a49">1</h1>
+            <h1 style="color:#2ab7ca">+</h1>
+            <h1 id="num2" style="color:#990674">1</h1>
+            <h1 style="color:#b40303">=</h1>
+            <h1 style="color:gray">?</h1>
+        </div>
+
+        <div class="answer-options">
+            <h1 id="option1">1</h1>
+            <h1 id="option2">2</h1>
+            <h1 id="option3">3</h1>
+            <h1 id="option4">4</h1>
         </div>
     </div>
+
+    <!-- Game Script -->
+    <script type="module" src="../js/modules/addition.js"></script>
 </body>
 </html>

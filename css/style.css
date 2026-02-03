@@ -1,0 +1,13 @@
+/**
+ * Main Stylesheet
+ * Imports all modular CSS files
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/* Import modular stylesheets */
+@import url('./variables.css');
+@import url('./header.css');
+@import url('./game.css');
+
+/* Additional global styles can be added here */
